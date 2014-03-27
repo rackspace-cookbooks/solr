@@ -1,8 +1,9 @@
 #
-# Cookbook Name:: hipsnip-solr
+# Cookbook Name:: rackspace_solr
 # Recipe:: default
 #
 # Copyright 2013, HipSnip Limited
+# Copyright 2014, Rackspace US, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,25 +18,25 @@
 # limitations under the License.
 #
 
-default['solr']['version'] = "3.6.2"
-default['solr']['checksum'] = "537426dcbdd0dc82dd5bf16b48b6bcaf87cb4049c1245eea8dcb79eeaf3e7ac6" #sha265
-default['solr']['directory'] = "/usr/local/src"
+default['rackspace_solr']['version'] = "3.6.2"
+default['rackspace_solr']['checksum'] = "537426dcbdd0dc82dd5bf16b48b6bcaf87cb4049c1245eea8dcb79eeaf3e7ac6" #sha265
+default['rackspace_solr']['directory'] = "/usr/local/src"
 
-default['solr']['link'] = ""
-default['solr']['download'] = ""
-default['solr']['extracted'] = ""
-default['solr']['war'] = ""
+default['rackspace_solr']['link'] = ""
+default['rackspace_solr']['download'] = ""
+default['rackspace_solr']['extracted'] = ""
+default['rackspace_solr']['war'] = ""
 
-default['solr']['home'] = "/usr/share/solr"
-default['solr']['data'] = "/usr/local/solr/data"
+default['rackspace_solr']['home'] = "/usr/share/solr"
+default['rackspace_solr']['data'] = "/usr/local/solr/data"
 
-default['solr']['context_path'] = '/solr'
-default['solr']['env_vars'] = {
-	'solr.solr.home' => node['solr']['home'],
-	'solr.data.dir' => node['solr']['data']
+default['rackspace_solr']['context_path'] = '/solr'
+default['rackspace_solr']['env_vars'] = {
+	'solr.solr.home' => node['rackspace_solr']['home'],
+	'solr.data.dir' => node['rackspace_solr']['data']
 }
 
 # SEVERE (highest value) WARNING INFO CONFIG FINE FINER FINEST (lowest value)
-default['solr']['log']['level'] = 'INFO'
-default['solr']['log']['class'] = 'java.util.logging.ConsoleHandler'
-default['solr']['log']['formatter'] = 'java.util.logging.SimpleFormatter'
+default['rackspace_solr']['log']['level'] = 'INFO'
+default['rackspace_solr']['log']['class'] = 'java.util.logging.ConsoleHandler'
+default['rackspace_solr']['log']['formatter'] = 'java.util.logging.SimpleFormatter'

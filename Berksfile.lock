@@ -1,31 +1,26 @@
 {
   "sources": {
-    "hipsnip-solr": {
+    "rackspace_solr": {
       "path": "."
     },
-    "apt": {
-      "locked_version": "2.1.0"
+    "hipsnip-jetty": {
+      "locked_version": "0.9.0",
+      "git": "git://github.com/hipsnip-cookbooks/jetty.git",
+      "ref": "a82f351b1b102e090fc5f258eeb839c7638ed9ed"
+    },
+    "rackspace_apt": {
+      "locked_version": "3.1.0",
+      "git": "git://github.com/rackspace-cookbooks/rackspace_sudo.git",
+      "ref": "f29969be4ce1eb948e4fce23f1824ee27071d6e5"
     },
     "minitest-handler": {
       "locked_version": "0.2.1"
     },
-    "hipsnip-solr_test": {
-      "path": "./test/cookbooks/hipsnip-solr_test"
-    },
-    "hipsnip-jetty": {
-      "locked_version": "0.9.0"
-    },
     "java": {
-      "locked_version": "1.14.0"
-    },
-    "windows": {
-      "locked_version": "1.10.0"
+      "locked_version": "1.19.2"
     },
     "chef_handler": {
       "locked_version": "1.1.4"
-    },
-    "aws": {
-      "locked_version": "0.101.6"
     }
   }
 }

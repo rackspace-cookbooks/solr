@@ -6,6 +6,6 @@ description      'Installs/Configures Solr'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version		 '1.0.0'
 
-supports 	 'ubuntu', '>= 12.04'
+supports 	 'ubuntu'
 
-depends 'rackspace_jetty', '~> 0.9.0'
+depends 'rackspace_jetty'

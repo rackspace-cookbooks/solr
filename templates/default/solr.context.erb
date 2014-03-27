@@ -2,5 +2,5 @@
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
 	<Set name="contextPath">/solr</Set>
-	<Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/<%= node['solr']['war'] %></Set>
+	<Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/<%= node['rackspace_solr']['war'] %></Set>
 </Configure>

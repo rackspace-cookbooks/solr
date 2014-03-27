@@ -19,15 +19,15 @@
 # -Djava.util.logging.config.file=etc/logging.properties
 
 ## Default global logging level:
-.level = <%= node['solr']['log']['level'] %>
+.level = <%= node['rackspace_solr']['log']['level'] %>
 
 ## Log every update command (add, delete, commit, ...)
 #org.apache.solr.update.processor.LogUpdateProcessor.level = FINE
 
 ## Where to log (space separated list).
-handlers = <%= node['solr']['log']['class'] %>
-java.util.logging.ConsoleHandler.level = <%= node['solr']['log']['level'] %>
-java.util.logging.ConsoleHandler.formatter = <%= node['solr']['log']['formatter'] %>
+handlers = <%= node['rackspace_solr']['log']['class'] %>
+java.util.logging.ConsoleHandler.level = <%= node['rackspace_solr']['log']['level'] %>
+java.util.logging.ConsoleHandler.formatter = <%= node['rackspace_solr']['log']['formatter'] %>
 
 #handlers = java.util.logging.FileHandler
 
